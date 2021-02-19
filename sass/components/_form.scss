@@ -70,14 +70,14 @@
     width: 3rem;
     border: 5px solid $color-primary;
     border-radius: 50%;
-    // display: block;
+    display: block;
     position: absolute;
     left: 0;
     top: -0.4rem;
 
     &::after {
       content: '';
-      // display: block;
+      display: block;
       height: 1.2rem;
       width: 1.2rem;
       border-radius: 50%;
