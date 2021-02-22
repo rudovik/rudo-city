@@ -32,6 +32,11 @@
       display: inline-block;
       transition: all 0.2s;
       line-height: 1;
+
+      @include respond(tab-land) {
+        top: 1.5rem;
+        right: 1.5rem;
+      }
     }
 
     &:hover {
@@ -50,11 +55,21 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-land) {
+      display: block;
+      width: 50%;
+    }
   }
 
   &__left {
     width: 33.3333333%;
     display: table-cell;
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+      @include clearfix;
+    }
   }
 
   &__right {
@@ -62,16 +77,31 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding: 2.5rem 2rem 3rem 2rem;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+    @include respond(tab-land) {
+      float: left;
+      max-height: 18rem;
+      width: 50%;
+    }
   }
 
   &__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 3rem;
+    }
 
     column-count: 2;
     column-gap: 4rem;
