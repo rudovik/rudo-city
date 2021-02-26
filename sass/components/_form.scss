@@ -3,6 +3,12 @@
     margin-bottom: 2rem;
   }
 
+  &__group:last-child {
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
   &__input {
     font-size: 1.5rem;
     font-family: inherit;
